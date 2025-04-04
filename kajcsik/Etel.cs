@@ -8,9 +8,9 @@ namespace kajcsik
 {
 	internal abstract class Etel
 	{
-		double caloriesPerDkg;
-		double wheight;
-		string name;
+		protected double caloriesPerDkg;
+		protected double wheight;
+		protected string name;
 
 		protected Etel(double caloriesPerDkg, double wheight, string name)
 		{
@@ -22,7 +22,7 @@ namespace kajcsik
 
 		public abstract double CountCalories();
 
-		bool itsDairyfree;
+		protected bool itsDairyfree;
 
 		public bool ItsDairyfree { get => itsDairyfree; set => itsDairyfree = value; }
 	}
